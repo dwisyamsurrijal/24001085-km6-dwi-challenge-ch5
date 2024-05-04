@@ -95,7 +95,7 @@ exports.updateCar = async (id, payload) => {
 exports.deleteCar = async (id) => {
   const key = `cars:${id}`;
 
-  await student.destroy({ where: { id } });
+  await cars.destroy({ where: { id } });
 
   await deleteData(key);
   
